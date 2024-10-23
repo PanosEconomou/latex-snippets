@@ -1,0 +1,102 @@
+matches:
+  - triggers: 
+    - "\\sys"
+    - "\\cases"
+    word: true
+    replace: "\\begin{cases}\n$|$\n\\end{cases}"
+
+  - triggers: 
+    - "\\align"
+    - "\\al"
+    word: true
+    replace: "\\begin{align}\n$|$\n\\end{align}"
+
+  - triggers: 
+    - "\\align*"
+    - "\\al*"
+    word: true
+    replace: "\\begin{align*}\n$|$\n\\end{align*}"
+
+  - triggers: 
+    - "\\equation"
+    - "\\eqn"
+    word: true
+    replace: "\\begin{equation}\n$|$\n\\end{equation}"
+
+  - triggers: 
+    - "\\equation*"
+    - "\\eqn*"
+    word: true
+    replace: "\\begin{equation*}\n$|$\n\\end{equation*}"
+
+  - triggers: 
+    - "\\frac "
+    - "\\fr "
+    replace: "\\frac{$|$}{}"
+
+  - triggers:
+    - "\\d "
+    - "\\der "
+    replace: "\\frac{d $|$}{d }"
+  
+  - triggers:
+    - "\\p "
+    - "\\par "
+    replace: "\\frac{\\partial $|$}{\\partial }"
+
+  - triggers:
+    - "\\qed"
+    word: true
+    replace: "\\begin{equation}\\tag*{$\\Box$}\\end{equation}"
+
+  - trigger: "\\R "
+    replace: "\\mathbb{R}"
+
+  - trigger: "\\C "
+    replace: "\\mathbb{C}"
+  
+  - trigger: "\\K "
+    replace: "\\mathbb{K}"
+
+  - trigger: "\\Z "
+    replace: "\\mathbb{Z}"
+
+  - trigger: "\\N "
+    replace: "\\mathbb{N}"
+
+  - trigger: "\\mb "
+    replace: "\\mathbb{$|$}"
+
+  - trigger: "\\mc "
+    replace: "\\mathcal{$|$}"
+
+  - trigger: "\\inv "
+    replace: "^{-1}"
+
+  - regex: "\\\\beg\\{(?P<environment>.*)\\}"
+    word: true
+    replace: "\\begin{{{environment}}}\n$|$\n\\end{{{environment}}}"
+  
+  - trigger: "\\l "
+    replace: "\\left"
+
+  - trigger: "\\r "
+    replace: "\\right"
+
+  - trigger: "[[ "
+    replace: "\\left["
+  
+  - trigger: "]] "
+    replace: "\\right]"
+
+  - trigger: "[[]] "
+    replace: "\\left[ $|$ \\right]"
+
+  - trigger: "(( "
+    replace: "\\left("
+  
+  - trigger: ")) "
+    replace: "\\right)"
+
+  - trigger: "(()) "
+    replace: "\\left( $|$ \\right)"
