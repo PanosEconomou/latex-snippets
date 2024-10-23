@@ -100,3 +100,6 @@ matches:
 
   - trigger: "(()) "
     replace: "\\left( $|$ \\right)"
+
+  - trigger: "Pan "
+    replace: "Panos"
