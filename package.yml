@@ -102,4 +102,4 @@ matches:
     replace: "\\left( $|$ \\right)"
 
   - trigger: "\\t "
-    replace: "\\text{$I$}"
+    replace: "\\text{$|$}"
