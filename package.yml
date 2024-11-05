@@ -104,6 +104,12 @@ matches:
   - trigger: "(()) "
     replace: "\\left( $|$ \\right)"
 
+  - trigger: "\\lr "
+    replace: "\\langle $|$ \\rangle"
+
+  - trigger: "\\LR "
+    replace: "\\left\\langle $|$ \\right\\rangle"
+
   - trigger: "\\t "
     replace: "\\text{$|$}"
 
