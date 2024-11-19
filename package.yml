@@ -71,7 +71,7 @@ matches:
     replace: "\\mathcal{$|$}"
 
   - trigger: "\\mf "
-    replace: "\\matfrac{$|$}"
+    replace: "\\mathfrak{$|$}"
 
   - trigger: "\\inv "
     replace: "^{-1}"
