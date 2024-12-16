@@ -115,3 +115,9 @@ matches:
 
   - trigger: "\\t, "
     replace: "\\text{$|$\\,}"
+
+  - triggers: 
+    - "\fr12 "
+    - "\f12 "
+    - "\frac12 "
+    replace: "\\frac{1}{2}"
