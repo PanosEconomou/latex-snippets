@@ -1,6 +1,6 @@
 name: "latex"
 title: "Latex"
 description: Some common latex snippets for breezing through any latex journey
-ersion: 0.1.9
+version: 0.1.9
 author: Panos Oikonomou
 tags: ["latex", "math", "equations"]
