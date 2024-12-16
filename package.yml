@@ -121,3 +121,6 @@ matches:
     - "\f12 "
     - "\frac12 "
     replace: "\\frac{1}{2}"
+
+  - trigger: "^^ "
+    replace: "^{$|$}"
