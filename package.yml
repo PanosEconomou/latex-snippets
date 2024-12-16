@@ -124,3 +124,6 @@ matches:
 
   - trigger: "^^ "
     replace: "^{$|$}"
+
+  - trigger: "__ "
+    replace: "_{$|$}"
