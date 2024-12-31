@@ -76,7 +76,7 @@ matches:
   - trigger: "\\mr"
     replace: "\\mathscr{$|$}"
 
- - trigger: "\\inv "
+  - trigger: "\\inv "
     replace: "^{-1}"
 
   - regex: "\\\\beg\\{(?P<environment>.*)\\}"
