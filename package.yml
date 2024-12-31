@@ -64,16 +64,19 @@ matches:
   - trigger: "\\N "
     replace: "\\mathbb{N}"
 
-  - trigger: "\\mb "
+  - trigger: "\\mb"
     replace: "\\mathbb{$|$}"
 
-  - trigger: "\\mc "
+  - trigger: "\\mc"
     replace: "\\mathcal{$|$}"
 
-  - trigger: "\\mf "
+  - trigger: "\\mf"
     replace: "\\mathfrak{$|$}"
 
-  - trigger: "\\inv "
+  - trigger: "\\mr"
+    replace: "\\mathscr{$|$}"
+
+ - trigger: "\\inv "
     replace: "^{-1}"
 
   - regex: "\\\\beg\\{(?P<environment>.*)\\}"
