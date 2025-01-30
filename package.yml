@@ -125,8 +125,8 @@ matches:
     - "\\frac12 "
     replace: "\\frac{1}{2}"
 
-  - trigger: "^^ "
+  - trigger: "^^"
     replace: "^{$|$}"
 
-  - trigger: "__ "
+  - trigger: "__"
     replace: "_{$|$}"
