@@ -64,16 +64,16 @@ matches:
   - trigger: "\\N "
     replace: "\\mathbb{N}"
 
-  - trigger: "\\mb"
+  - trigger: "\\mb "
     replace: "\\mathbb{$|$}"
 
-  - trigger: "\\mc"
+  - trigger: "\\mc "
     replace: "\\mathcal{$|$}"
 
-  - trigger: "\\mf"
+  - trigger: "\\mf "
     replace: "\\mathfrak{$|$}"
 
-  - trigger: "\\mr"
+  - trigger: "\\mr "
     replace: "\\mathscr{$|$}"
 
   - trigger: "\\inv "
@@ -125,8 +125,11 @@ matches:
     - "\\frac12 "
     replace: "\\frac{1}{2}"
 
-  - trigger: "^^"
+  - trigger: "^^ "
     replace: "^{$|$}"
 
-  - trigger: "__"
+  - trigger: "__ "
     replace: "_{$|$}"
+
+  - trigger: "\\sm "
+    replace: "\\setminus"
