@@ -137,11 +137,11 @@ matches:
   - trigger: "\\t, "
     replace: "\\text{$|$\\,}"
 
-  - regex: "\\\\tt(?P<TEXT>.*)\\ "
-    replace: "\\text{{{TEXT}}}" 
+  - regex: "\\\\T(?P<input1>.*) "
+    replace: "\\text{{{input1}}}" 
   
-  - regex: "\\\\tt(?P<TEXT>.*)\\, "
-    replace: "\\text{{{TEXT}}\\,}" 
+  - regex: "\\\\T(?P<input1>.*), "
+    replace: "\\text{{{input1}}\\,}" 
 
 
 
