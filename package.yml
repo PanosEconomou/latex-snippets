@@ -137,9 +137,13 @@ matches:
   - trigger: "\\t, "
     replace: "\\text{$|$\\,}"
 
-  - regex: "\\\\tt(?P<TEXT>.*)"
-    word: true
+  - regex: "\\\\tt(?P<TEXT>.*)\\ "
     replace: "\\text{{{TEXT}}}" 
+  
+  - regex: "\\\\tt(?P<TEXT>.*)\\, "
+    replace: "\\text{{{TEXT}}\\,}" 
+
+
 
   - triggers: 
     - "\\fr12 "
