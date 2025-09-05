@@ -71,25 +71,25 @@ matches:
     replace: "\\mathbb{N}"
 
   - regex: "\\\\mb(?P<char>[A-Za-z]) "
-    replace: "\\mathbb{{char}}"
+    replace: "\\mathbb{{{char}}}"
 
   - regex: "\\\\mb "
     replace: "\\mathbb{$|$}"
 
   - regex: "\\\\mc(?P<char>[A-Za-z]) "
-    replace: "\\mathcal{{char}}"
+    replace: "\\mathcal{{{char}}}"
 
   - regex: "\\\\mc "
     replace: "\\mathcal{$|$}"
 
   - regex: "\\\\mf(?P<char>[A-Za-z]) "
-    replace: "\\mathfrak{{char}}"
+    replace: "\\mathfrak{{{char}}}"
 
   - regex: "\\\\mf "
     replace: "\\mathfrak{$|$}"
 
   - regex: "\\\\mr(?P<char>[A-Za-z]) "
-    replace: "\\mathscr{{char}}"
+    replace: "\\mathscr{{{char}}}"
 
   - regex: "\\\\mr "
     replace: "\\mathscr{$|$}"
