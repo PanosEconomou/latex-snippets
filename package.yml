@@ -140,7 +140,7 @@ matches:
   - regex: "\\\\T(?P<input1>.*) "
     replace: "\\text{{{input1}}}" 
   
-  - regex: "\\\\T(?P<input1>.*), "
+  - regex: "\\\\L(?P<input1>.*) "
     replace: "\\text{{{input1}}\\,}" 
 
 
