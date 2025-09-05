@@ -52,6 +52,12 @@ matches:
   - trigger: "\\R "
     replace: "\\mathbb{R}"
 
+  - trigger: "\\Q "
+    replace: "\\mathbb{Q}"
+ 
+  - trigger: "\\H "
+    replace: "\\mathbb{H}"
+ 
   - trigger: "\\C "
     replace: "\\mathbb{C}"
   
@@ -66,6 +72,10 @@ matches:
 
   - trigger: "\\mb "
     replace: "\\mathbb{$|$}"
+
+  - regex: "\\mb([A-Za-z])"
+    word: true
+    replace: "\\mathbb{\1}"
 
   - trigger: "\\mc "
     replace: "\\mathcal{$|$}"
