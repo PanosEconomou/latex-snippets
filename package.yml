@@ -70,20 +70,28 @@ matches:
   - trigger: "\\N "
     replace: "\\mathbb{N}"
 
-  - trigger: "\\mb "
-    replace: "\\mathbb{$|$}"
-
-  - regex: "\\mb(?P<char>[A-Za-z])"
-    word: true
+  - regex: "\\\\mb(?P<char>[A-Za-z]) "
     replace: "\\mathbb{{char}}"
 
-  - trigger: "\\mc "
+  - regex: "\\\\mb "
+    replace: "\\mathbb{$|$}"
+
+  - regex: "\\\\mc(?P<char>[A-Za-z]) "
+    replace: "\\mathcal{{char}}"
+
+  - regex: "\\\\mc "
     replace: "\\mathcal{$|$}"
 
-  - trigger: "\\mf "
+  - regex: "\\\\mf(?P<char>[A-Za-z]) "
+    replace: "\\mathfrak{{char}}"
+
+  - regex: "\\\\mf "
     replace: "\\mathfrak{$|$}"
 
-  - trigger: "\\mr "
+  - regex: "\\\\mr(?P<char>[A-Za-z]) "
+    replace: "\\mathscr{{char}}"
+
+  - regex: "\\\\mr "
     replace: "\\mathscr{$|$}"
 
   - trigger: "\\inv "
