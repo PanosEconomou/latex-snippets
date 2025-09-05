@@ -73,9 +73,9 @@ matches:
   - trigger: "\\mb "
     replace: "\\mathbb{$|$}"
 
-  - regex: "\\mb([A-Za-z])"
+  - regex: "\\mb(?P<char>[A-Za-z])"
     word: true
-    replace: '\\mathbb{\1}'
+    replace: "\\mathbb{{char}}"
 
   - trigger: "\\mc "
     replace: "\\mathcal{$|$}"
