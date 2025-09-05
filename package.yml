@@ -75,7 +75,7 @@ matches:
 
   - regex: "\\mb([A-Za-z])"
     word: true
-    replace: "\\mathbb{\1}"
+    replace: '\\mathbb{\1}'
 
   - trigger: "\\mc "
     replace: "\\mathcal{$|$}"
