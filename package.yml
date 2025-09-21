@@ -19,13 +19,13 @@ matches:
 
   - triggers: 
     - "\\equation"
-    - "\\eqn"
+    - "\\eq"
     word: true
     replace: "\\begin{equation}\n$|$\n\\end{equation}"
 
   - triggers: 
     - "\\equation*"
-    - "\\eqn*"
+    - "\\eq*"
     word: true
     replace: "\\begin{equation*}\n$|$\n\\end{equation*}"
 
