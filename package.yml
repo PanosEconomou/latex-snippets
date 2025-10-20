@@ -97,6 +97,14 @@ matches:
   - trigger: "\\inv "
     replace: "^{-1}"
 
+  - regex: "\\\\hmf(?P<char>[A-Za-z]) "
+    replace: "\\hat{\\mathfrak{{{char}}}}"
+
+  - regex: "\\\\hmf "
+    replace: "\\hat{\\mathfrak{$|$}}"
+
+
+
   - regex: "\\\\beg\\{(?P<environment>.*)\\}"
     word: true
     replace: "\\begin{{{environment}}}\n$|$\n\\end{{{environment}}}"
