@@ -44,6 +44,15 @@ matches:
     - "\\par "
     replace: "\\frac{\\partial $|$}{\\partial }"
 
+  - triggers: "\\i "
+    replace: "\\int"
+
+  - triggers: "\\ii "
+    replace: "\\int_{$|$}"
+
+ - triggers: "\\iii "
+    replace: "\\int_{$|$}^{}"
+ 
   - triggers:
     - "\\qed"
     word: true
