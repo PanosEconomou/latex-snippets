@@ -44,13 +44,13 @@ matches:
     - "\\par "
     replace: "\\frac{\\partial $|$}{\\partial }"
 
-  - triggers: "\\i "
+  - trigger: "\\i "
     replace: "\\int"
 
-  - triggers: "\\ii "
+  - trigger: "\\ii "
     replace: "\\int_{$|$}"
 
- - triggers: "\\iii "
+  - trigger: "\\iii "
     replace: "\\int_{$|$}^{}"
  
   - triggers:
