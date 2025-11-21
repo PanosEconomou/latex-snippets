@@ -176,3 +176,12 @@ matches:
 
   - trigger: "\\sm "
     replace: "\\setminus"
+
+  - trigger: "\\op "
+    replace: "\\^{\\text{op}}"
+
+  - trigger: "\\* "
+    replace: "\\^{\\ast}"
+
+  - trigger: "\\dag "
+    replace: "\\^{\\dagger}"
