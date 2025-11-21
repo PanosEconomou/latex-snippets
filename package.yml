@@ -178,10 +178,10 @@ matches:
     replace: "\\setminus"
 
   - trigger: "\\op "
-    replace: "\\^{\\text{op}}"
+    replace: "^{\\text{op}}"
 
   - trigger: "\\* "
-    replace: "\\^{\\ast}"
+    replace: "^{\\ast}"
 
   - trigger: "\\dag "
-    replace: "\\^{\\dagger}"
+    replace: "^{\\dagger}"
