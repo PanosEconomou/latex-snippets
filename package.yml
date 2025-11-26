@@ -78,10 +78,10 @@ matches:
     replace: "\\mathbb{N}"
 
   - trigger: "\\tr "
-    replace: "\\text{tr\,}"
+    replace: "\\text{tr\\,}"
 
   - trigger: "\\Tr "
-    replace: "\\text{Tr\,}"
+    replace: "\\text{Tr\\,}"
 
   - regex: "\\\\mb(?P<char>[A-Za-z]) "
     replace: "\\mathbb{{{char}}}"
