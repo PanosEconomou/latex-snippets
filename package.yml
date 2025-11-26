@@ -53,9 +53,7 @@ matches:
   - trigger: "\\iii "
     replace: "\\int_{$|$}^{}"
  
-  - triggers:
-    - "\\qed"
-    word: true
+  - trigger: "\\qed "
     replace: "\\begin{equation}\\tag*{$\\Box$}\\end{equation}"
 
   - trigger: "\\R "
@@ -78,6 +76,12 @@ matches:
 
   - trigger: "\\N "
     replace: "\\mathbb{N}"
+
+  - trigger: "\\tr "
+    replace: "\\text{tr\,}"
+
+  - trigger: "\\Tr "
+    replace: "\\text{Tr\,}"
 
   - regex: "\\\\mb(?P<char>[A-Za-z]) "
     replace: "\\mathbb{{{char}}}"
